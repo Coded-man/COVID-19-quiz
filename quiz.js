@@ -33,12 +33,12 @@ covidQuiz=[
     },
     {
         question: 'Is there a cure for COVID-19?' ,
-        options: ['Yes', 'No'],
+        options: ['Yes', 'No', 'Maybe'],
         answer: 1
     },
     {
         question: 'Exposing yourself to the sun or to temperatures higher than 25C degrees does not prevent COVID-19' ,
-        options: ['True', 'False'],
+        options: ['True', 'False', 'No Idea'],
         answer: 0
     }
 ]
