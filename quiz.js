@@ -32,14 +32,14 @@ covidQuiz=[
         answer: 2
     },
     {
-        question: 'As of 9th of May 2020, the total number of confirmed COVID-19 cases across 187 affected countries are?' ,
-        options: ['2.96 million', '3.02 million', '2.02 million', '3.96 million'],
-        answer: 3
+        question: 'Is there a cure for COVID-19?' ,
+        options: ['Yes', 'No'],
+        answer: 1
     },
     {
-        question: 'The total COVID-19 death cases recorded as of 9th of May 2020 is?' ,
-        options: ['265,000 deaths', '270,000 deaths', '275,000 deaths', '280,000 deaths'],
-        answer: 2
+        question: 'Exposing yourself to the sun or to temperatures higher than 25C degrees does not prevent COVID-19' ,
+        options: ['True', 'False'],
+        answer: 0
     }
 ]
 
