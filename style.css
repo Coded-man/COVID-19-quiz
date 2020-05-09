@@ -1,0 +1,218 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: url("corona.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+
+body {
+    font-family: 'sans-serif';
+    padding: 10px;
+}
+
+.box {
+    max-width: 700px;
+    background-color: white;
+    margin: 30px auto;
+    padding: 40px 30px;
+    border-radius: 10px;
+    border: 2px solid chocolate;
+}
+
+.home {
+    text-align: center;
+    display: none;
+}
+
+.home.show {
+    display: block;
+}
+
+.home h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: gray;
+    margin: 0 0 20px;
+}
+
+.btn {
+    background-color: tomato;
+    border: 2px solid snow;
+    padding: 14px 40px;
+    color: white;
+    font-size: 1.25rem;
+    border-radius: 30px;
+    cursor: pointer;
+    white-space: nowrap;
+    margin: 0 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.quiz {
+    background-color: rgb(209, 208, 208);
+    display: none;
+}
+
+.quiz.show {
+    display: block;
+}
+
+.question-box {
+    background-color: white;
+    padding: 40px 30px;
+    margin-top: 40px;
+    border-radius: 10px;
+    border: 2px solid chocolate;
+    text-align: center;
+    position: relative;
+}
+
+.quiz .score {
+    font-size: 1.8rem;
+    /* background-color: teal; */
+    text-transform: uppercase;
+    color: #000000;
+    text-align: right;
+    font-family: sans-serif;
+}
+
+.quiz .score-answer {
+    font-weight: 800;
+}
+.question-box .question-number {
+    height: 70px;
+    width: 70px;
+    background-color: white;
+    border: 2px solid chocolate;
+    font-size: 1.4rem;
+    border-radius: 50%;
+    font-weight: 800;
+    line-height: 68px;
+    text-align: center;
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    margin-left: -30px;
+    z-index: 1;
+    color: #705050;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.question-box .question {
+    font-size: 2rem;
+    color: #705050;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.option-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.option-box .option{
+    background-color: white;
+    flex-basis: calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    margin-top: 30px;
+    padding: 14px 15px;
+    text-align: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #705050;
+    border-radius: 30px;
+    font-weight: 500;
+    border: 2px solid chocolate;
+    cursor: pointer;
+}
+
+.option.show-correct {
+    background-color: green;
+    border-color: white;
+    color: white;
+}
+
+.option.correct {
+    background-color: green;
+    border-color: white;
+    color: white;
+}
+
+.option.wrong {
+    background-color: red;
+    color: white;
+    border-color: white;
+}
+
+.option.already-answered {
+    pointer-events: none;
+}
+
+.quiz .next {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.result-btn, .next-btn {
+    display: none;
+}
+
+.result-btn.show, .next-btn.show {
+    display: inline-block;
+}
+
+.quiz-end-box {
+    text-align: center;
+    display: none;
+}
+
+.quiz-end-box.show {
+    display: block;
+}
+
+.quiz-end-box h1 {
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: coral;
+    margin: 0 0 20px;
+}
+
+.quiz-end-box h4 {
+    font-size: 1.25rem;
+    font-weight: normal;
+    color: #555555;
+    margin: 15px 0 20px;
+}
+
+.quiz-end-box h4 span {
+    font-weight: 800;
+    color: #111111;
+}
+
+.start-again {
+    margin: 15px;
+}
+
+.go-to-home {
+    margin: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    .home h3{
+        font-size: 1.3rem;
+    }
+    .quiz .score{
+        font-size: 1.5rem;
+    }
+    .option-box .option{
+        font-size: 1.025rem;
+    }
+}

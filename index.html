@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Quiz Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script defer src="quiz.js"></script>
+</head>
+<body>
+    <div class="home box show">
+        <h3>The quiz to know more about COVID-19</h3>
+        <button type="button" class="start-btn btn">Attempt The Quiz</button>
+    </div>
+
+    <div class="quiz box">
+        <div class="score">
+            <span class="score-text">Score:</span>
+            <span class="score-answer"></span>
+        </div>
+        <div class="question-box">
+            <div class="question-number">     
+            </div>
+            <div class="question">
+                
+            </div>
+        </div>
+        <div class="option-box">
+           
+        </div>
+        <div class="next">
+            <button type="button" class="next-btn btn">Next Question</button>
+            <button type="button" class="result-btn btn">Show Result</button>
+        </div>
+    </div>
+
+    <div class="quiz-end-box box">
+        <h1>Quiz Result</h1>
+        <h4>Total Questions: <span class="total-questions"></span></h4>
+        <h4>Correct: <span class="total-correct"></span></h4>
+        <h4>Wrong: <span class="total-wrong"></span></h4>
+        <h4>Percentage: <span class="percentage"></span></h4>
+        <button type="button" class="start-again btn">Start Again</button>
+        <button type="button" class="go-to-home btn">Go To Home</button>
+    </div>
+    
+</body>
+</html>
